@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Libre Franklin', sans-serif;;
+}
+.container{
+  width:75%;
+  background-color:white;
+  margin: auto;
+  text-align: center;
+}
+.container img {
+  margin: 70px 0;
+  max-width: 100%;
+}
+.container header p:first-of-type { 
+  font-size: 27px;
+  color:hsl(0, 0%, 59%);
+  margin-bottom: 20px;
+}
+.container header p:first-of-type span{
+  font-weight: bold;
+  color: black;
+}
+.container header p:nth-of-type(2){
+  font-weight: 300;
+}
+@media (min-width:768px) {
+  .container header form{
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+  }
+  .container header form input:first-of-type{
+    width: 65%;
+    
+  }
+  .container header form input:last-of-type{
+    width: 30%;
+  }
+}
+.container header form input{
+  width: 100%;
+  padding: 15px 30px;
+  margin-top:20px;
+  border-radius: 30px;
+}
+.container header form input:first-of-type{
+  border: 2px solid hsl(223, 100%, 88%);
+  outline: none;
+  color: hsl(223, 100%, 88%);
+}
+.container header form input:last-of-type
+{
+  text-align: center;
+  background-color: hsl(223, 87%, 63%);
+  border: hsl(223, 100%, 88%);
+  color:white;
+}
+.container header form input:last-of-type:hover{
+  background-color: hsl(223, 97%, 72%);
+  cursor: pointer;
+}
+.container .links{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.container .links svg{
+  padding: 5px;
+  margin-left: 15px;
+  height: 16px;
+  width: 16px;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  text-align: center;
+  color:hsl(223, 87%, 63%);
+}
+.container p:last-of-type{
+  color:hsl(0, 0%, 59%);
+  font-size: 15px;
+}
+.error{
+  color:hsl(354, 100%, 66%);
+  width: fit-content;
+  margin-left: 30px;
+  font-size: 10px;
+  font-weight: 600;
+}
